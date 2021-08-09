@@ -22,7 +22,7 @@ struct MenuManager {
             case "2":
                 TrainerView()
             case "3":
-                PetshopDetailView()
+                TrainerView()
             default:
                 AccountView()
             }
@@ -34,6 +34,6 @@ struct MenuManager {
 
 struct TestView: View {
      var body: some View {
-        PetshopDetailView()
+        TrainerView()
     }
 }

@@ -9,17 +9,34 @@ import SwiftUI
 
 struct PetshopView: View {
     @StateObject var viewModel = PetshopViewModel()
+    @State var show = false
+    @State var dta: PetshopData
+    @Namespace var animation
+    @State private var navBarHidden = false
+    
     var body: some View {
         ZStack {
-            //NavigationView {
             List(viewModel.petshopData, id: \.id) { data in
                ServiceCard(data: data)
+                .onTapGesture {
+                    withAnimation(.easeIn){
+                        show.toggle()
+                        navBarHidden.toggle()
+                        dta = data
+                    }
+                   
+                }
             }
-            .navigationTitle("Petshop")
-            //}
             .onAppear { viewModel.getPetshopByCountry() }
+            .navigationBarHidden(navBarHidden)
+            .navigationTitle("Petshops")
             
             if  viewModel.isLoading { LoadingView() }
+            
+            if show{
+                PetshopDetailView( show: $show, navBarHidden: $navBarHidden, data: dta, animation: _animation)
+            }
+            
         }
         
         .alert(item: $viewModel.alertItem) { alertItem in
@@ -30,6 +47,6 @@ struct PetshopView: View {
 
 struct PetshopView_Previews: PreviewProvider {
     static var previews: some View {
-        PetshopView()
+        PetshopView(dta: PetshopData.dummyData)
     }
 }

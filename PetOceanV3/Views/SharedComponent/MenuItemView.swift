@@ -11,6 +11,7 @@ struct MenuItemView: View {
     // State variables to leep track of what option has been tapped on and when to navigate to new view
         @State private var selectedOption: NavigationViewOptions.Option = (id:UUID(),"", "",.petshop)
         @State private var showDetail: Bool = false
+   
         
         var body: some View {
             //NavigationView {
@@ -53,12 +54,13 @@ struct MenuItemView_Previews: PreviewProvider {
 }
 
 struct NavigationViewOptions {
-    enum OptionType { case petshop, trainer, adoption, more }
+    enum OptionType { case petshop, trainer,breeder, adoption, more }
     typealias Option = (id: UUID,imageName: String, value: String, type: Self.OptionType)
     static var options: [Option] = [
         (UUID(),"shop", "Petshop", .petshop),
         (UUID(),"trainer", "Trainer", .trainer),
-        (UUID(),"adoption", "Adoption", .adoption),
+        (UUID(),"breeder", "Breeder", .breeder),
+        (UUID(),"adoption", "Adopt", .adoption),
         (UUID(),"more", "More", .more),
        
     ]
@@ -66,9 +68,11 @@ struct NavigationViewOptions {
     static func buildView(for option: Option) -> some View {
         switch option.type {
         case .petshop:
-            return AnyView(PetshopView())
+            return AnyView(PetshopView(dta: PetshopData.dummyData))
         case .trainer:
             return   AnyView(TrainerView())
+        case .breeder:
+            return   AnyView(BreederView())
         case .adoption:
             return   AnyView(TrainerView())
         case .more:

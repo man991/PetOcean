@@ -45,6 +45,17 @@
 		6F6225D826B45B95005CBA84 /* PetshopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6225D726B45B95005CBA84 /* PetshopViewModel.swift */; };
 		6F6225DA26B45D2B005CBA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6225D926B45D2B005CBA84 /* LoadingView.swift */; };
 		6F6225DC26B46020005CBA84 /* TrainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6225DB26B46020005CBA84 /* TrainerViewModel.swift */; };
+		6F9DE3D426B6E651000D32CC /* TrainerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9DE3D326B6E651000D32CC /* TrainerCard.swift */; };
+		6F9DE3D626B6E930000D32CC /* TrainerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9DE3D526B6E930000D32CC /* TrainerDetailView.swift */; };
+		6FB5B5F926BC392600B79A20 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB5B5F826BC392600B79A20 /* CustomShape.swift */; };
+		6FC0C6AD26BFCFA3000A7EE5 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6AC26BFCFA3000A7EE5 /* CustomNavigationView.swift */; };
+		6FC0C6B026C023A3000A7EE5 /* BreederView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6AF26C023A3000A7EE5 /* BreederView.swift */; };
+		6FC0C6B426C0282F000A7EE5 /* BreederTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6B326C0282F000A7EE5 /* BreederTabButton.swift */; };
+		6FC0C6B626C029B1000A7EE5 /* ScrollTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6B526C029B1000A7EE5 /* ScrollTabModel.swift */; };
+		6FC0C6B826C03220000A7EE5 /* BreederData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6B726C03220000A7EE5 /* BreederData.swift */; };
+		6FC0C6BA26C033CD000A7EE5 /* BreederManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6B926C033CD000A7EE5 /* BreederManager.swift */; };
+		6FC0C6BC26C0344B000A7EE5 /* BreederViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6BB26C0344B000A7EE5 /* BreederViewModel.swift */; };
+		6FC0C6BE26C03509000A7EE5 /* BreederCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0C6BD26C03509000A7EE5 /* BreederCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +99,17 @@
 		6F6225D726B45B95005CBA84 /* PetshopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetshopViewModel.swift; sourceTree = "<group>"; };
 		6F6225D926B45D2B005CBA84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		6F6225DB26B46020005CBA84 /* TrainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerViewModel.swift; sourceTree = "<group>"; };
+		6F9DE3D326B6E651000D32CC /* TrainerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerCard.swift; sourceTree = "<group>"; };
+		6F9DE3D526B6E930000D32CC /* TrainerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerDetailView.swift; sourceTree = "<group>"; };
+		6FB5B5F826BC392600B79A20 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		6FC0C6AC26BFCFA3000A7EE5 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		6FC0C6AF26C023A3000A7EE5 /* BreederView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreederView.swift; sourceTree = "<group>"; };
+		6FC0C6B326C0282F000A7EE5 /* BreederTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreederTabButton.swift; sourceTree = "<group>"; };
+		6FC0C6B526C029B1000A7EE5 /* ScrollTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabModel.swift; sourceTree = "<group>"; };
+		6FC0C6B726C03220000A7EE5 /* BreederData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreederData.swift; sourceTree = "<group>"; };
+		6FC0C6B926C033CD000A7EE5 /* BreederManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreederManager.swift; sourceTree = "<group>"; };
+		6FC0C6BB26C0344B000A7EE5 /* BreederViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreederViewModel.swift; sourceTree = "<group>"; };
+		6FC0C6BD26C03509000A7EE5 /* BreederCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreederCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +168,7 @@
 		6F62259026B3FFBD005CBA84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6FC0C6AE26C02398000A7EE5 /* Breeder */,
 				6F6225C426B4418D005CBA84 /* Register */,
 				6F62259926B42C1D005CBA84 /* Petshop */,
 				6F62259826B42C17005CBA84 /* Login */,
@@ -168,6 +191,8 @@
 				6F6225B526B4410D005CBA84 /* PetshopModel.swift */,
 				6F6225B926B4410D005CBA84 /* RegisterModel.swift */,
 				6F6225B426B4410D005CBA84 /* TrainerData.swift */,
+				6FC0C6B526C029B1000A7EE5 /* ScrollTabModel.swift */,
+				6FC0C6B726C03220000A7EE5 /* BreederData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +212,10 @@
 				6F6225CF26B44A2A005CBA84 /* PetshopCard.swift */,
 				6F6225D326B45A53005CBA84 /* ServiceCard.swift */,
 				6F6225D926B45D2B005CBA84 /* LoadingView.swift */,
+				6F9DE3D326B6E651000D32CC /* TrainerCard.swift */,
+				6FB5B5F826BC392600B79A20 /* CustomShape.swift */,
+				6FC0C6AC26BFCFA3000A7EE5 /* CustomNavigationView.swift */,
+				6FC0C6BD26C03509000A7EE5 /* BreederCard.swift */,
 			);
 			path = SharedComponent;
 			sourceTree = "<group>";
@@ -221,6 +250,7 @@
 			children = (
 				6F6225C026B4413B005CBA84 /* TrainerView.swift */,
 				6F6225DB26B46020005CBA84 /* TrainerViewModel.swift */,
+				6F9DE3D526B6E930000D32CC /* TrainerDetailView.swift */,
 			);
 			path = Trainer;
 			sourceTree = "<group>";
@@ -254,6 +284,7 @@
 				6F6225A626B440CF005CBA84 /* ServiceRemoteImageViewer.swift */,
 				6F6225AB26B440CF005CBA84 /* TrainerManager.swift */,
 				6F6225A726B440CF005CBA84 /* UserManager.swift */,
+				6FC0C6B926C033CD000A7EE5 /* BreederManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -273,6 +304,16 @@
 				6F6225C526B441A7005CBA84 /* RegisterViewModel.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		6FC0C6AE26C02398000A7EE5 /* Breeder */ = {
+			isa = PBXGroup;
+			children = (
+				6FC0C6AF26C023A3000A7EE5 /* BreederView.swift */,
+				6FC0C6B326C0282F000A7EE5 /* BreederTabButton.swift */,
+				6FC0C6BB26C0344B000A7EE5 /* BreederViewModel.swift */,
+			);
+			path = Breeder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,8 +390,10 @@
 				6F62259F26B436B5005CBA84 /* AccountView.swift in Sources */,
 				6F6225BE26B4410D005CBA84 /* AuthenticateData.swift in Sources */,
 				6F6225AD26B440CF005CBA84 /* ServiceRemoteImageViewer.swift in Sources */,
+				6FB5B5F926BC392600B79A20 /* CustomShape.swift in Sources */,
 				6F6225D026B44A2A005CBA84 /* PetshopCard.swift in Sources */,
 				6F62259B26B42DA8005CBA84 /* MenuItemView.swift in Sources */,
+				6F9DE3D626B6E930000D32CC /* TrainerDetailView.swift in Sources */,
 				6F6225BD26B4410D005CBA84 /* PetshopData.swift in Sources */,
 				6F62257D26B3FF80005CBA84 /* AppDelegate.swift in Sources */,
 				6F6225DC26B46020005CBA84 /* TrainerViewModel.swift in Sources */,
@@ -358,14 +401,18 @@
 				6F6225CC26B44257005CBA84 /* LoginViewModel.swift in Sources */,
 				6F6225D626B45B89005CBA84 /* PetshopView.swift in Sources */,
 				6F6225BF26B4410D005CBA84 /* RegisterModel.swift in Sources */,
+				6FC0C6BA26C033CD000A7EE5 /* BreederManager.swift in Sources */,
 				6F62257F26B3FF80005CBA84 /* SceneDelegate.swift in Sources */,
 				6F6225C126B4413B005CBA84 /* TrainerView.swift in Sources */,
+				6F9DE3D426B6E651000D32CC /* TrainerCard.swift in Sources */,
 				6F6225D826B45B95005CBA84 /* PetshopViewModel.swift in Sources */,
 				6F6225D226B44BB2005CBA84 /* HomeViewModel.swift in Sources */,
 				6F6225C826B441A7005CBA84 /* RegisterView.swift in Sources */,
 				6F62259D26B42DE1005CBA84 /* HomeView.swift in Sources */,
 				6F6225AF26B440CF005CBA84 /* MenuManager.swift in Sources */,
 				6F6225B126B440CF005CBA84 /* PetshopManager.swift in Sources */,
+				6FC0C6B626C029B1000A7EE5 /* ScrollTabModel.swift in Sources */,
+				6FC0C6B026C023A3000A7EE5 /* BreederView.swift in Sources */,
 				6F6225A526B4405C005CBA84 /* API.swift in Sources */,
 				6F6225DA26B45D2B005CBA84 /* LoadingView.swift in Sources */,
 				6F6225BA26B4410D005CBA84 /* TrainerData.swift in Sources */,
@@ -375,9 +422,14 @@
 				6F6225C726B441A7005CBA84 /* RegisterViewModel.swift in Sources */,
 				6F6225CE26B44260005CBA84 /* LoginView.swift in Sources */,
 				6F6225BC26B4410D005CBA84 /* EnvironmentObject.swift in Sources */,
+				6FC0C6B426C0282F000A7EE5 /* BreederTabButton.swift in Sources */,
+				6FC0C6AD26BFCFA3000A7EE5 /* CustomNavigationView.swift in Sources */,
+				6FC0C6B826C03220000A7EE5 /* BreederData.swift in Sources */,
 				6F6225BB26B4410D005CBA84 /* PetshopModel.swift in Sources */,
+				6FC0C6BC26C0344B000A7EE5 /* BreederViewModel.swift in Sources */,
 				6F6225D426B45A53005CBA84 /* ServiceCard.swift in Sources */,
 				6F6225CA26B441D9005CBA84 /* AppState.swift in Sources */,
+				6FC0C6BE26C03509000A7EE5 /* BreederCard.swift in Sources */,
 				6F6225B326B440CF005CBA84 /* AlertItem.swift in Sources */,
 				6F6225B226B440CF005CBA84 /* TrainerManager.swift in Sources */,
 			);

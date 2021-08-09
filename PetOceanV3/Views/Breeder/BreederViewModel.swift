@@ -1,28 +1,28 @@
 //
-//  TrainerViewModel.swift
+//  BreederViewModel.swift
 //  PetOceanV3
 //
-//  Created by Macbook on 30/07/21.
+//  Created by Macbook on 08/08/21.
 //
 
 import Foundation
 
-class TrainerViewModel: ObservableObject {
+class BreederViewModel: ObservableObject {
     var decoder = JSONDecoder()
-    @Published  var trainerData : [TrainerData] = []
+    @Published  var breederData : [BreederData] = []
     @Published  var isLoading = false
     @Published  var alertItem: AlertItem?
     
-    func getTopTrainer() {
+    func getBreeders() {
         isLoading = true
         
-        TrainerManager.shared.getTopTrainer(){ [self] result in
+        BreederManager.shared.getBreederList(){ [self] result in
             DispatchQueue.main.async {
                 
                 switch result {
                 case .success(let result):
                 
-                    self.trainerData = result
+                    self.breederData = result
                     isLoading = false
                 case .failure(let error):
                     switch error {

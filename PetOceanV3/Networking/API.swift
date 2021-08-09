@@ -37,6 +37,10 @@ struct Api {
         return "\(baseURL)Trainer/GetTopTrainer?countryid=28BE38BD-DF42-4CE3-97C6-F362D205B57C"
     }
     
+    var getBreederList: String{
+        return "\(baseURL)Breeder/GetBreederList?countryId=28BE38BD-DF42-4CE3-97C6-F362D205B57C"
+    }
+    
     var getRatingByServiceID: String{
         return "\(baseURL)Service/GetRatingList"
     }

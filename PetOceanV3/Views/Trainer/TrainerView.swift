@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct TrainerView: View {
+    @StateObject var viewModel = TrainerViewModel()
     var body: some View {
-        Text("trainer")
+        ZStack {
+                List(viewModel.trainerData, id: \.id) { data in
+
+                    NavigationLink(destination: TrainerDetailView(trainer: data)) {
+                        TrainerCard(data: data)
+                    }
+                }
+                .navigationTitle("Trainer")
+                .onAppear { viewModel.getTopTrainer() }
+            
+            if  viewModel.isLoading { LoadingView() }
+        }
+        
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+        }
     }
 }
 

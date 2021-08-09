@@ -20,6 +20,7 @@ struct ContentView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
        
     }
     
