@@ -10,7 +10,7 @@ import SwiftUI
 struct SuccessView: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        Text("Order Suceed")
+        Text("Order Sukses")
             .foregroundColor(.blue)
             .font( .title)
             .onTapGesture {
