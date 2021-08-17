@@ -45,6 +45,8 @@ struct CustomTabView: View {
             TabView(selection: $selectedTab){
                 HomeView()
                     .tag("home")
+                EventView()
+                    .tag("event-2")
                 HistoryView()
                     .tag("history")
                 AccountView()
@@ -93,7 +95,7 @@ struct TabButton: View {
     }
 }
 
-var tabs = ["home", "history", "account"]
+var tabs = ["home","event-2", "history", "account"]
 
 
 

@@ -8,3 +8,4 @@
 import Foundation
 
 var scroll_tabs = ["Cat", "Dog", "Bird", "Rabbit", "Cook", "Cow", "Fish"]
+var historyScrollTabs = ["History", "Ongoing", "Scheduled"]

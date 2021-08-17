@@ -74,7 +74,7 @@ struct NavigationViewOptions {
         case .breeder:
             return   AnyView(BreederView())
         case .adoption:
-            return   AnyView(TrainerView())
+            return   AnyView(PetboyView())
         case .more:
             return   AnyView(TrainerView())
         }
