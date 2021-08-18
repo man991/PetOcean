@@ -22,7 +22,7 @@ struct Api {
     }
     
     var getDoctorByCountry: String{
-        return "\(baseURL)Doctor/GetDoctorByCountryID?countryid=28BE38BD-DF42-4CE3-97C6-F362D205B57C"
+        return "\(baseURL)Doctor/GetDoctorByCountryID?countryId=28BE38BD-DF42-4CE3-97C6-F362D205B57C"
     }
     
     var authenticate: String{

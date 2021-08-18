@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MenuItemView: View {
-    // State variables to leep track of what option has been tapped on and when to navigate to new view
-        @State private var selectedOption: NavigationViewOptions.Option = (id:UUID(),"", "",.petshop)
+    
+        @State private var selectedOption: NavigationViewOptions.Option = (id:UUID(),"", "",.doctor)
         @State private var showDetail: Bool = false
    
         
@@ -54,10 +54,18 @@ struct MenuItemView_Previews: PreviewProvider {
 }
 
 struct NavigationViewOptions {
-    enum OptionType { case petshop, trainer,breeder, adoption, more }
+    enum OptionType {
+        //case petshop,
+             case doctor,
+             breeder,
+             adoption,
+             trainer,
+             more
+              }
     typealias Option = (id: UUID,imageName: String, value: String, type: Self.OptionType)
     static var options: [Option] = [
-        (UUID(),"shop", "Petshop", .petshop),
+        //(UUID(),"shop", "Petshop", .petshop),
+        (UUID(),"doctor", "Doctor", .doctor),
         (UUID(),"trainer", "Trainer", .trainer),
         (UUID(),"breeder", "Breeder", .breeder),
         (UUID(),"adoption", "Adopt", .adoption),
@@ -67,16 +75,18 @@ struct NavigationViewOptions {
         
     static func buildView(for option: Option) -> some View {
         switch option.type {
-        case .petshop:
-            return AnyView(PetshopView(dta: PetshopData.dummyData))
+//        case .petshop:
+//            return AnyView(PetshopView(dta: PetshopData.dummyData))
         case .trainer:
             return   AnyView(TrainerView())
         case .breeder:
             return   AnyView(BreederView())
         case .adoption:
             return   AnyView(PetboyView())
+        case .doctor:
+            return   AnyView(DoctorView())
         case .more:
-            return   AnyView(TrainerView())
+            return   AnyView(Text("Hello More Menu"))
         }
     }
 }

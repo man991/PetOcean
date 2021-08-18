@@ -48,6 +48,10 @@
 		6F6225DC26B46020005CBA84 /* TrainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6225DB26B46020005CBA84 /* TrainerViewModel.swift */; };
 		6F9DE3D426B6E651000D32CC /* TrainerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9DE3D326B6E651000D32CC /* TrainerCard.swift */; };
 		6F9DE3D626B6E930000D32CC /* TrainerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9DE3D526B6E930000D32CC /* TrainerDetailView.swift */; };
+		6FB4D95926CD53020035A6C3 /* DoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D95826CD53020035A6C3 /* DoctorView.swift */; };
+		6FB4D95B26CD53200035A6C3 /* DoctorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D95A26CD53200035A6C3 /* DoctorViewModel.swift */; };
+		6FB4D95D26CD532E0035A6C3 /* DoctorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D95C26CD532E0035A6C3 /* DoctorData.swift */; };
+		6FB4D96026CD55A40035A6C3 /* DoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D95F26CD55A40035A6C3 /* DoctorCard.swift */; };
 		6FB5B5F926BC392600B79A20 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB5B5F826BC392600B79A20 /* CustomShape.swift */; };
 		6FB9AD7626C5683B007687A9 /* PetboyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9AD7526C5683B007687A9 /* PetboyView.swift */; };
 		6FB9AD7A26C56868007687A9 /* PetboyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9AD7926C56868007687A9 /* PetboyViewModel.swift */; };
@@ -114,6 +118,10 @@
 		6F6225DB26B46020005CBA84 /* TrainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerViewModel.swift; sourceTree = "<group>"; };
 		6F9DE3D326B6E651000D32CC /* TrainerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerCard.swift; sourceTree = "<group>"; };
 		6F9DE3D526B6E930000D32CC /* TrainerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerDetailView.swift; sourceTree = "<group>"; };
+		6FB4D95826CD53020035A6C3 /* DoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorView.swift; sourceTree = "<group>"; };
+		6FB4D95A26CD53200035A6C3 /* DoctorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewModel.swift; sourceTree = "<group>"; };
+		6FB4D95C26CD532E0035A6C3 /* DoctorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorData.swift; sourceTree = "<group>"; };
+		6FB4D95F26CD55A40035A6C3 /* DoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCard.swift; sourceTree = "<group>"; };
 		6FB5B5F826BC392600B79A20 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 		6FB9AD7526C5683B007687A9 /* PetboyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetboyView.swift; sourceTree = "<group>"; };
 		6FB9AD7926C56868007687A9 /* PetboyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetboyViewModel.swift; sourceTree = "<group>"; };
@@ -192,6 +200,7 @@
 		6F62259026B3FFBD005CBA84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6FB4D95726CD52F30035A6C3 /* Doctor */,
 				6FE1F1CC26CAA8810093AD8E /* Event */,
 				6FB9AD7426C56766007687A9 /* Petboy */,
 				6FC0C6AE26C02398000A7EE5 /* Breeder */,
@@ -220,6 +229,7 @@
 				6FC0C6B526C029B1000A7EE5 /* ScrollTabModel.swift */,
 				6FC0C6B726C03220000A7EE5 /* BreederData.swift */,
 				6FE1F1D126CAB10D0093AD8E /* EventData.swift */,
+				6FB4D95C26CD532E0035A6C3 /* DoctorData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,6 +345,24 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		6FB4D95726CD52F30035A6C3 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				6FB4D95E26CD55950035A6C3 /* Component */,
+				6FB4D95826CD53020035A6C3 /* DoctorView.swift */,
+				6FB4D95A26CD53200035A6C3 /* DoctorViewModel.swift */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		6FB4D95E26CD55950035A6C3 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6FB4D95F26CD55A40035A6C3 /* DoctorCard.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		6FB9AD7426C56766007687A9 /* Petboy */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +476,8 @@
 			files = (
 				6F6225A126B436C9005CBA84 /* HistoryView.swift in Sources */,
 				6F62259F26B436B5005CBA84 /* AccountView.swift in Sources */,
+				6FB4D96026CD55A40035A6C3 /* DoctorCard.swift in Sources */,
+				6FB4D95926CD53020035A6C3 /* DoctorView.swift in Sources */,
 				6F6225BE26B4410D005CBA84 /* AuthenticateData.swift in Sources */,
 				6F6225AD26B440CF005CBA84 /* ServiceRemoteImageViewer.swift in Sources */,
 				6FB5B5F926BC392600B79A20 /* CustomShape.swift in Sources */,
@@ -493,6 +523,7 @@
 				6FE1F1CE26CAA8920093AD8E /* EventView.swift in Sources */,
 				6F6225BC26B4410D005CBA84 /* EnvironmentObject.swift in Sources */,
 				6FC0C6B426C0282F000A7EE5 /* BreederTabButton.swift in Sources */,
+				6FB4D95D26CD532E0035A6C3 /* DoctorData.swift in Sources */,
 				6FC0C6AD26BFCFA3000A7EE5 /* CustomNavigationView.swift in Sources */,
 				6FC0C6B826C03220000A7EE5 /* BreederData.swift in Sources */,
 				6F6225BB26B4410D005CBA84 /* PetshopModel.swift in Sources */,
@@ -500,6 +531,7 @@
 				6F6225D426B45A53005CBA84 /* ServiceCard.swift in Sources */,
 				6F6225CA26B441D9005CBA84 /* AppState.swift in Sources */,
 				6FE1F1D626CAB3890093AD8E /* EventCard.swift in Sources */,
+				6FB4D95B26CD53200035A6C3 /* DoctorViewModel.swift in Sources */,
 				6FC0C6BE26C03509000A7EE5 /* BreederCard.swift in Sources */,
 				6F6225B326B440CF005CBA84 /* AlertItem.swift in Sources */,
 				6F6225B226B440CF005CBA84 /* TrainerManager.swift in Sources */,
